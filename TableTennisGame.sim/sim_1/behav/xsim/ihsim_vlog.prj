@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../TableTennisGame.srcs/sources_1/new/clock_generator.v" \
+"../../../../TableTennisGame.srcs/sources_1/new/interaction_handler_for_simulation_only.v" \
+"../../../../TableTennisGame.srcs/sim_1/new/ihsim.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
